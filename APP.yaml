@@ -1,0 +1,52 @@
+# APP.yaml — self-describing manifest. Source of truth for the App Catalog.
+# After editing, regenerate the catalog:  cd ~/Documents/Claude/Projects && python3 build-catalog.py
+schema_version: 1
+name: Floor is Lava
+slug: floor-is-lava
+one_liner: A tiny single-page "Floor is Lava!" web toy — a random picker/spinner game.
+status: experimental
+type: static-site
+owner: Stephen Hull
+created: 2026-02
+updated: 2026-02-27
+
+description: >
+  A minimal two-file web toy (index.html + a spinner page) — a "Floor is Lava!"
+  random picker/spinner. Pure client-side, no backend, no build step. Cloned into
+  the fleet 2026-07-01 (was GitHub-only, no local checkout). Small/occasional.
+
+stack:
+  - Single-page HTML/CSS/JS (no dependencies)
+
+port: none
+
+launchagents:
+  - none
+
+schedules:
+  - none
+
+entry_points:
+  - index.html (the game)
+  - floor-is-lava-spinner.html (spinner view)
+
+data:
+  - none (stateless toy)
+
+secrets:
+  - none
+
+docs_present: []
+docs_missing: []
+
+distribution: local+github
+git_remote: https://github.com/hullst/floor-is-lava.git
+deploy: none recorded (static — can drop on any static host if wanted)
+tags:
+  - game
+  - toy
+  - static-site
+
+notable: >
+  Smallest app in the fleet — a stateless static toy. Marked experimental; promote
+  to active or archive as you like.
