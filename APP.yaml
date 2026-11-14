@@ -1,5 +1,5 @@
 # APP.yaml — self-describing manifest. Source of truth for the App Catalog.
-# After editing, regenerate the catalog:  cd ~/Documents/Claude/Projects && python3 build-catalog.py
+# After editing, regenerate the catalog:  cd ~/Documents/Claude/Projects/Fleet && python3 build-catalog.py
 schema_version: 1
 name: Floor is Lava
 slug: floor-is-lava
